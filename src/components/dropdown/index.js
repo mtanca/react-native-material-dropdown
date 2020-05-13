@@ -504,6 +504,8 @@ export default class Dropdown extends PureComponent {
       String(title);
 
     return (
+      <View>
+      <Text> HELLO </Text>
       <TextField
         label=''
         labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
@@ -515,6 +517,7 @@ export default class Dropdown extends PureComponent {
         onChangeText={undefined}
         renderAccessory={renderAccessory}
       />
+      </View>
     );
   }
 
